@@ -9,7 +9,7 @@ console.log(allCategories);
 
 const App = () => {
   const [menuItems, setMenuItems] = useState(items);
-  const [categories, setCategories] = useState(allCategories);
+  
 
   const filterItems = (category) => {
     if(category === 'all') {
@@ -29,7 +29,7 @@ const App = () => {
           <div className="underline"></div>
         </div>
 
-        <Categories categories={categories} filterItems={filterItems} />
+        <Categories categories={allCategories} filterItems={filterItems} />
 
         <Menu items={menuItems} />
 
